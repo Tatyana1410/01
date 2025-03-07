@@ -44,6 +44,7 @@ function Main(props) {
 
      const totalPrice = selectedProduct.reduce((acc, product) => {
         const price = product.price || 0;
+        console.log(price)
         return acc + price;
       }, 0);
     
